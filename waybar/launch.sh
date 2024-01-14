@@ -1,0 +1,4 @@
+killall waybar
+
+waybar &
+

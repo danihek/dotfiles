@@ -1,0 +1,80 @@
+{
+    // Workspaces
+    "hyprland/workspaces" : {
+        "on-click": "activate",
+        "active-only": false,
+        "all-outputs": true,
+        "format": "{}",
+        "format-icons": {
+			"urgent": "",
+			"active": "",
+			"default": ""
+        }     
+    },
+    "cpu": {
+      "interval": 1,
+    	"format": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% ",
+    	"format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+    },
+    // ChatGPT Launcher
+    "custom/chatgpt": {
+        "format": "Merlin",
+        "on-click": "brave-nightly --app=https://chat.openai.com",
+        "tooltip": false
+    },
+
+    "custom/cava": {
+    "exec": "sleep 3 && cava -p ~/dotfiles/waybar/config_cava.conf | sed -u 's/;//g;s/0/0/g;s/1/1/g;s/2/2/g;s/3/3/g;s/4/4/g;s/5/5/g;s/6/6/g;s/7/7/g;s/8/8/g;s/9/9/g;'"
+    },
+
+
+    // Power Menu
+    "custom/power": {
+        "format": "",
+        "on-click": "wlogout",
+        "tooltip": false
+    },
+    // Clock
+    "clock": {
+        "timezone": "Poland",
+	
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{: %I:%M %p  %d/%m/%Y}",
+        "format-alt": "{: %I:%M %p}"
+    },
+
+    // Pulseaudio
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": "🔇",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", " ", " "]
+        },
+        "on-click": "pavucontrol"
+    },
+    "custom/media": {
+        "format": "{}",
+        "interval": 1,
+        "exec": "~/dotfiles/waybar/mediaplayer.sh",
+        "on-click": "foot -e cava"
+    },
+    "memory": {
+    	"interval": 0.1,
+    	"format": "{used:0.1f}G/{total:0.1f}G "
+    },
+
+    "custom/wallpaper": {
+        "format": "☯",
+        "on-click": "~/dotfiles/scripts/updatewal-swww.sh"
+        
+    }
+}
