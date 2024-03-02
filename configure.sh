@@ -1,11 +1,11 @@
 #!/bin/bash
 
-first="ln -s /home/$USER/dotfiles"
+first="sudo ln -s /home/$USER/dotfiles"
 sec="/home/$USER/.config"
 
 
-$first/hypr $sec/hypr
-$first/waybar $sec/waybar
-$first/wlogout $sec/wlogout
-$first/kitty $sec/kitty
+$first/hypr $sec/
+$first/waybar $sec/
+$first/wlogout $sec/
+$first/kitty $sec/
 
