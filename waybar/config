@@ -13,8 +13,6 @@
     "margin-right": 5,    
     "spacing": 0,
 
-    "output": "DP-1",
-
     // Load Modules
     "include": ["~/dotfiles/waybar/modules.json"],
 
@@ -34,6 +32,7 @@
     "modules-right": [
         "custom/wallpaper",
         "pulseaudio",
+        "battery",
         "clock",
     ]
 }

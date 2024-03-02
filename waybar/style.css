@@ -227,7 +227,19 @@ window#waybar.hidden {
    font-weight: normal;
    font-style: normal;
 }
+#battery {
+	color: @colorBORDER;
+	background: @colorINSIDE;
+   opacity:0.8;
+	border: 2px;
+   border-style: solid;
+   border-color: @colorBORDER;
 
+	margin: 5px 5px 5px 5px;
+   padding: 0px 5px 0px 5px;
+   font-weight: normal;
+   font-style: normal;
+}
 #custom-launcher {
 	font-size: 24px;
 	padding-left: 10px;

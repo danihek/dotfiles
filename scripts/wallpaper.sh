@@ -1,8 +1,9 @@
-selected=$(ls -1 ~/wallpaper | grep "jpg" | rofi -dmenu -config ~/dotfiles/rofi/config-wallpaper.rasi -p "Wallpapers")
+selected=$(ls -1 ~/wallpaper | grep "jpg" | rofi -dmenu)
 
 echo $selected
 
 wal -o ~/dotfiles/scripts/copyDiscordColorScheme.sh -i ~/wallpaper/$selected
+
 source "$HOME/.cache/wal/colors.sh"
 
 if [ "$selected" ]; then
