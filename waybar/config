@@ -1,0 +1,38 @@
+// WAYBAR
+
+{
+    // General Settings
+
+    // Position TOP
+    "layer": "top",
+    "margin-top": 5,
+    "margin-bottom": 0,
+        
+    "layer": "top",
+    "margin-left": 5,
+    "margin-right": 5,    
+    "spacing": 0,
+
+    // Load Modules
+    "include": ["~/dotfiles/waybar/modules.json"],
+
+    // Modules Left
+    "modules-left": [
+        "cpu",
+        "memory",
+        "custom/media"
+    ],
+
+    // Modules Center
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+
+    // Modules Right    
+    "modules-right": [
+        "pulseaudio",
+        "battery",
+        "clock",
+    ]
+}
+
